@@ -1,0 +1,270 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sih.resthousefe.RestHFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your PNR number"
+                android:id="@+id/textpnr"
+                android:paddingTop="50dp"
+                android:textAlignment="center"
+                android:paddingBottom="20dp"
+                android:visibility="visible"
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editpnr"
+                android:visibility="visible"
+
+                android:hint="Pnr"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search"
+                android:text="search"
+                android:layout_gravity="center"
+                android:visibility="visible"
+
+                />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+
+            >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:id="@+id/from"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:id="@+id/getfrom"
+        android:visibility="invisible"
+        />
+    
+    
+</RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:id="@+id/to"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/getto"
+                    android:paddingLeft="60dp"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tr Name"
+                    android:id="@+id/tr_name"
+                    android:visibility="invisible"
+
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/get_tr_name"
+                    android:paddingLeft="60dp"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tr No."
+                    android:id="@+id/tr_no"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/get_tr_no"
+                    android:paddingLeft="60dp"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:id="@+id/date"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/getdate"
+                    android:paddingLeft="60dp"
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:id="@+id/fromst"
+                    android:visibility="invisible"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tost"
+                    android:visibility="invisible"
+                   android:layout_toRightOf="@id/fromst"
+                    />
+                
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckIn Date"
+                android:id="@+id/txtcheckin"
+                    android:visibility="invisible"
+                />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/checkin"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@id/txtcheckin"
+                    >
+            </Spinner>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CheckOut Date"
+                    android:id="@+id/txtcheckout"
+                    android:visibility="invisible"
+                    />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/checkout"
+                    android:id="@+id/checkout"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@id/txtcheckout"
+
+                    >
+                </Spinner>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Passengers"
+                    android:id="@+id/txt_no_pass"
+                    android:visibility="invisible"
+                    />
+
+                <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/no_pass"
+                    android:id="@+id/no_pass"
+                    android:visibility="invisible"
+                    android:layout_toRightOf="@id/txt_no_pass"
+
+                    >
+
+                </Spinner>
+
+            </RelativeLayout>
+
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Availability"
+                android:id="@+id/check"
+                android:visibility="invisible"
+                />
+           
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+
+

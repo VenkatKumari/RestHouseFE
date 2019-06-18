@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sih.resthousefe">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" />
+        <!-- <activity android:name=".SearchPage"></activity> -->
+        <activity
+            android:name=".SearchPage"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".SuiteDetail" />
+        <activity android:name=".Det_RH_View" />
+        <activity android:name=".BookingRh" />
+        <activity android:name=".Personal_Det" />
+        <activity android:name=".Booked_Rooms" />
+        <activity android:name=".Cancel" />
+        <activity android:name=".Extend" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Table" />
+
+        <activity android:name=".chatbot" />
+
+        <activity android:name=".Gen_OTP" />
+        <activity android:name=".Main2Activity"/>
+        <activity android:name=".Hallfinder"/>
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD-0yNnYxpZkQ_FvfpGCDAVSfl9h15rIWc" />
+
+        <!-- <activity -->
+        <!-- android:name=".booking_history" -->
+        <!-- android:label="@string/title_activity_booking_history" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".booking_history" -->
+        <!-- android:label="@string/title_activity_booking_history" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"></activity> -->
+        <!-- <activity android:name=".GmailActivity"></activity> -->
+
+
+        <activity android:name=".pojo.MlActivity" />
+
+        <activity android:name=".webview">
+
+
+
+        </activity>
+        <activity android:name=".M1" />
+        <activity android:name=".M2" />
+        <activity android:name=".M3" />
+        <activity android:name=".M4" />
+        <activity android:name=".M5" />
+        <activity android:name=".M6" />
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/roomid"
+                    android:text="Room Id"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_roomid"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:text="Date"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_date"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:text="Time"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_time"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Allotment"
+                android:padding="10dp"
+                />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="S.NO"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:text="Room No"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:text="Passenger Name"
+                        android:padding="10dp"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:text="10A"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:text="AAAAA"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="2"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:text="10B"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        />
+                    <TextView
+                        android:padding="10dp"
+                        android:text="BBBBB"
+                        android:layout_gravity="center"
+                        />
+                </TableRow>
+                <RelativeLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Confirm"
+                        android:id="@+id/confirm"
+
+
+                        />
+
+
+                </RelativeLayout>
+            </TableLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textSize="20dp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   If a room is being booked in single transaction for more than 24 hrs periods in combination of slots (12+24,24+12 and 24+24) then second slot assumes as extension of booking of first slot and 25% extra tariff of the second slot is being charged"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

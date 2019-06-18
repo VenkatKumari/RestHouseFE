@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:id="@+id/lvm"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <TextView
+
+        android:id="@+id/t1"
+        android:background="@drawable/border2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Chennai"/>
+
+       <TextView
+           android:id="@+id/t2"
+           android:background="@drawable/border2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:layout_below="@+id/t1"
+           android:text="Haridwar"/>
+
+       <TextView
+           android:id="@+id/t3"
+           android:background="@drawable/border2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:layout_below="@+id/t2"
+           android:text="Rishikesh"/>
+
+       <TextView
+           android:id="@+id/t4"
+           android:background="@drawable/border2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:layout_below="@+id/t3"
+           android:text="Ooty"/>
+
+       <TextView
+           android:id="@+id/t5"
+           android:background="@drawable/border2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:layout_below="@+id/t4"
+           android:text="Maharashtra"/>
+
+       <TextView
+           android:id="@+id/t6"
+           android:background="@drawable/border2"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:layout_below="@+id/t5"
+           android:text="Goa"/>
+
+   </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/lvm"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+
+</RelativeLayout>

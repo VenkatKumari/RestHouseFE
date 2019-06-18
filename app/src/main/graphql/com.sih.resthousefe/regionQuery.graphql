@@ -1,0 +1,95 @@
+query ViewRegionQuery{
+  region{
+    id
+    regionid
+    regionname
+  }
+}
+
+query ViewInfoQuery
+{
+holidayhome{
+  id
+  hhname
+  hhadetails
+  hhavail
+  hhremavail
+  hhlocation
+  hhacontact
+  }
+}
+
+
+
+query DetailViewQuery($id:Int!)
+{
+holidayhome(id:$id)
+  {
+  id
+  hhname
+  hhadetails
+  hhavail
+  hhdate
+  hhremavail
+  hhlocation
+  hhacontact
+    suite {
+      id
+      suitename
+      suiterating
+      suiterate
+      bedtype
+      suiteavail
+      suitetype
+
+    }
+  }
+}
+
+query SuiteQuery($id:Int!,$suitetype:String!)
+{
+  suite(holidayhomeId:$id,suitetype:$suitetype) {
+    id
+    suitename
+    suitetype
+    suiteavail
+    suiterating
+    suiterate
+  }
+}
+query RoomQuery($id:Int!)
+{
+room(id:$id)
+  {
+  id
+  roomno
+  bedtype
+  roomtype
+  available
+    tariff
+  }
+}
+query MobQuery($id:String!)
+{
+  employee(empid:$id)
+  {
+    empmobile
+    empid
+    empname
+    empemailid
+    designation
+  }
+}
+query RoombQuery{
+  booking{
+    id
+    empname
+    designation
+    fdate
+    tdate
+  }
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<LinearLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9FBE7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView
+    android:id = "@+id/sNo"
+    android:layout_width = "0dp"
+    android:layout_height = "match_parent"
+    android:layout_weight = "1"
+    android:background = "@drawable/cell_shape"
+    android:ellipsize = "end"
+    android:padding = "5dp"
+    android:text = "Name"
+    android:singleLine = "true" />
+
+<TextView
+android:id = "@+id/product"
+android:layout_width = "0dp"
+android:layout_height = "match_parent"
+android:layout_weight = "1.8"
+android:background = "@drawable/cell_shape"
+android:ellipsize = "end"
+android:padding = "5dp"
+android:text = "Designation"
+android:singleLine = "true"
+    android:inputType="textMultiLine"/>
+
+<TextView
+android:id = "@+id/category"
+android:layout_width = "0dp"
+android:layout_height = "match_parent"
+android:layout_weight = "1.5"
+android:background = "@drawable/cell_shape"
+android:ellipsize = "end"
+android:padding = "5dp"
+android:text = "Date"
+android:singleLine = "true"
+    android:inputType="textMultiLine"/>
+
+<TextView
+android:id = "@+id/price"
+android:layout_width = "0dp"
+android:layout_height = "match_parent"
+android:layout_weight = "1"
+android:background = "@drawable/cell_shape"
+android:ellipsize = "end"
+android:padding = "5dp"
+    android:textAlignment="center"
+android:text = "Confirm"
+    android:inputType="textMultiLine"
+android:singleLine = "true" />
+    </LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/roomid"
+                    android:text="Room Id"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_roomid"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:text="Date"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_date"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:text="Time"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_time"
+                    android:padding="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Allotment"
+                android:padding="10dp"
+                />
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TextView
+                        android:text="S.NO"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:text="Room No"
+                        android:padding="10dp"
+                        />
+                    <TextView
+                        android:text="Passenger Name"
+                        android:padding="10dp"
+                        />
+                </TableRow>
+                <android.support.design.widget.AppBarLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    >
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+
+                        />
+
+                </android.support.design.widget.AppBarLayout>
+
+                <include layout="@layout/content_recycle"/>
+                <RelativeLayout>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Confirm"
+                        android:id="@+id/confirm"
+
+
+                        />
+
+
+                </RelativeLayout>
+            </TableLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textSize="20dp"
+                android:padding="20dp"
+                />
+            <TextView
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    1.Deduction of 10% on cancellation in advance of 48 hrs of the day of occupation.
+    2.Deduction of 50% on cancellation within a period of less than 48 hrs to the day of occupation.
+    3.Deduction of 100% on cancellation on the day of occupation.
+    4.Passenger wise cancellation is not allowed , only Room wise cancellation is allowed.
+    5.If more than one room/dormitory is booked and cancellation is being done for few room/dormitory then cancellation rule 1, 2 and 3 will be applicable for room/dormitory as per case.
+
+"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

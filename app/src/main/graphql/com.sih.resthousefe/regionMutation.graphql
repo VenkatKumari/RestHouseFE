@@ -1,0 +1,11 @@
+mutation BookMutation($empname:String!,$empid:String!,$emonno:String!,$empemail:String!,$designation:String!,$hhid:String!,$fdate:String!,$tdate:String!){
+  addBooking(empname:$empname,empid:$empid,emonno:$emonno,empemail:$empemail,designation:$designation,hhid:$hhid,fdate:$fdate,tdate:$tdate)
+  {
+    id
+  }
+}
+
+mutation CommentMutation($tag:String!,$comment:String!){
+  addComment(commenttag:$tag,commentdetail:$comment,suiteid:"1"){
+    commenttag
+  }

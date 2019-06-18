@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="600px"
+            android:id="@+id/img"
+
+
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Category"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:id="@+id/category"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/category"
+                android:padding="10dp"
+                android:layout_below="@+id/category"
+                android:id="@+id/spinner"
+                >
+
+            </Spinner>
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC Status"
+            android:id="@+id/txtac"
+            android:padding="10dp"
+            />
+
+            <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="80dp"
+
+                android:id="@+id/acstatus"
+                >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AC"
+                android:id="@+id/ac"
+                android:layout_toRightOf="@id/txtac"
+                android:padding="10dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NON AC"
+                android:id="@+id/non_ac"
+                android:layout_toRightOf="@id/ac"
+                android:padding="10dp"
+                />
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quota"
+            android:id="@+id/quota"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/male"
+            android:layout_toRightOf="@id/quota"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/female"
+            android:layout_toRightOf="@id/male"
+            android:padding="10dp"
+            />
+        <RadioButton
+            android:id="@+id/general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="26dp"
+
+            android:padding="10dp"
+            android:text="General" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time In"
+            android:id="@+id/timein"
+            android:padding="10dp"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/time"
+            android:layout_toRightOf="@id/timein"
+            android:padding="10dp"
+            >
+
+
+        </Spinner>
+
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:text="S.NO"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:text="Passengers"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:text="Checking"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="1"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+
+                />
+            <TextView
+                android:text="AAAAA"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+
+                />
+            <CheckBox
+                android:layout_gravity="center"
+
+                android:paddingRight="10dp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="2"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:text="BBBBB"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <CheckBox
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="3"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:text="CCCCC"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <CheckBox
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="4"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:text="DDDDD"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <CheckBox
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="5"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:text="EEEEE"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <CheckBox
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="6"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:text="FFFFF"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                />
+            <CheckBox
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allot your Rooms"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="Room No"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+
+                    />
+                <TextView
+                    android:text="Room Facility"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+
+
+                    />
+                <TextView
+                    android:text="Allot Passengers"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="10A"
+
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="First Floor,Geyser,AC,European Toilet"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/passengers"
+                    >
+
+                </Spinner>
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="10B"
+
+                    />
+                <TextView
+                    android:layout_width="100px"
+                    android:layout_gravity="center"
+                    android:text="First Floor,Geyser,AC,European Toilet"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/passengers"
+                    >
+
+                </Spinner>
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="10C"
+
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="First Floor,Geyser,AC,European Toilet"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/passengers"
+                    >
+
+                </Spinner>
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="10D"
+
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="First Floor,Geyser,AC,European Toilet"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/passengers"
+                    >
+
+                </Spinner>
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="10E"
+
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="First Floor,Geyser,AC,European Toilet"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/passengers"
+                    >
+
+                </Spinner>
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                >
+                <TextView
+                    android:text="10F"
+
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="First Floor,Geyser,AC,European Toilet"
+                    />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/passengers"
+                    >
+
+                </Spinner>
+            </TableRow>
+        </TableLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:id="@+id/price"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/price"
+                android:id="@+id/get_price"
+                android:layout_marginLeft="20dp"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:id="@+id/book"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt1"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt2"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt3"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt4"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt5"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt6"
+
+            />
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

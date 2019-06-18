@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/sno"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/roomno"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/passname"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
